@@ -8,13 +8,12 @@ import java.util.List;
 public class tianqi_back_entity {
     private int errNum;
     private String errMsg;
-    //private List<tianqi_entity> retData;
-    private tianqi_entity retData;
+    private List<tianqi_entity> retData;
     public tianqi_back_entity(){
         super();
     }
 
-    public tianqi_back_entity(int errNum, String errMsg, tianqi_entity retData) {
+    public tianqi_back_entity(int errNum, String errMsg, List<tianqi_entity> retData) {
         this.errNum = errNum;
         this.errMsg = errMsg;
         this.retData = retData;
@@ -36,11 +35,11 @@ public class tianqi_back_entity {
         this.errMsg = errMsg;
     }
 
-    public tianqi_entity getRetData() {
+    public List<tianqi_entity> getRetData() {
         return retData;
     }
 
-    public void setRetData(tianqi_entity retData) {
+    public void setRetData(List<tianqi_entity> retData) {
         this.retData = retData;
     }
 

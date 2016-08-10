@@ -6,6 +6,7 @@
     android:layout_height="40dp">
 <ImageView
     android:layout_centerVertical="true"
+    android:src="@mipmap/ic_launcher"
     android:layout_alignParentLeft="true"
     android:layout_width="30dp"
     android:layout_height="30dp"
@@ -17,12 +18,13 @@
         android:textSize="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewtitle" />
+        android:id="@+id/textView" />
     <ImageView
+        android:background="@mipmap/ic_launcher"
         android:layout_marginRight="20dp"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/imageViewtitle" />
+        android:id="@+id/imageView" />
 </RelativeLayout>
