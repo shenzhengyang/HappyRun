@@ -11,11 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.zy.happyrun.Cyclists_ring.Activity.Cyclists_ring_main;
+import com.example.zy.happyrun.Cyclists_said.Activity.Cyclists_mainPager;
 import com.example.zy.happyrun.F_activity;
 import com.example.zy.happyrun.Main_pager.Adapter.MainViewPaperAdapter;
+import com.example.zy.happyrun.My_Information.Activity.My_InformationActivity;
 import com.example.zy.happyrun.R;
 import com.example.zy.happyrun.S_activity;
 import com.example.zy.happyrun.T_activity;
+import com.example.zy.happyrun.more.Activity.more_main;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,19 +55,19 @@ public class Mainpager_Activity extends AppCompatActivity implements View.OnClic
         lin4.setOnClickListener(this);
         Map<String,Object>map1=new HashMap<String, Object>();
         map1.put("title", "第一个Activity");
-        map1.put("view", getView((String) map1.get("title"), new Intent(this, F_activity.class)));
+        map1.put("view", getView((String) map1.get("title"), new Intent(this, My_InformationActivity.class)));
         viewlist.add(map1);
         Map<String,Object>map2=new HashMap<String, Object>();
         map2.put("title","第二个Activity");
-        map2.put("view", getView((String) map2.get("title"), new Intent(this, S_activity.class)));
+        map2.put("view", getView((String) map2.get("title"), new Intent(this, Cyclists_mainPager.class)));
         viewlist.add(map2);
         Map<String,Object>map3=new HashMap<String, Object>();
         map3.put("title","第三个Activity");
-        map3.put("view", getView((String) map3.get("title"), new Intent(this, T_activity.class)));
+        map3.put("view", getView((String) map3.get("title"), new Intent(this, Cyclists_ring_main.class)));
         viewlist.add(map3);
         Map<String,Object>map4=new HashMap<String, Object>();
         map4.put("title","第四个Activity");
-        map4.put("view", getView((String) map4.get("title"), new Intent(this, T_activity.class)));
+        map4.put("view", getView((String) map4.get("title"), new Intent(this, more_main.class)));
         viewlist.add(map4);
 
         MainViewPaperAdapter mainViewPaperAdapter=new MainViewPaperAdapter(viewlist,getSupportFragmentManager());
